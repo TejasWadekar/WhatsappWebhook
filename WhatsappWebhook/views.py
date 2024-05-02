@@ -52,7 +52,8 @@ def whatsAppWebhook(request):
                         timestamp = entry['changes'][0]["value"]['messages'][0]['timestamp']
                         text = entry['changes'][0]["value"]['messages'][0]['text']['body']
 
-                        phoneNumber = "+917058921518"
+                        print(phoneNumber,phoneId,profileName)
+                        phoneNumber = "917058921518"
                         message = f'{text} was received'
                         sendWhatsAppMessage(phoneNumber, message)
                 except:
