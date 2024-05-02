@@ -17,7 +17,9 @@ def sendWhatsAppMessage(phoneNumber, message):
     ans = response.json()
     return ans
 
-
+phoneNumber = "+917058921518"
+message = "I'm Tejas"
+sendWhatsAppMessage(phoneNumber,message)
 
 
 
