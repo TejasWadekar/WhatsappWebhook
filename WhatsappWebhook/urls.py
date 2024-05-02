@@ -1,8 +1,10 @@
 from django.urls import path
-from .views import whatsAppWebhook
+from .views import whatsAppWebhook, sendWhatsAppMessage, ans
 
 urlpatterns = [
-    path('',view = whatsAppWebhook, name= 'webhook'),
+    # path('',view = whatsAppWebhook, name= 'webhook'),
+    # path('',view = sendWhatsAppMessage, name= 'webhook'),
+    path('',view = ans, name= 'webhook'),
 ]
 
 
