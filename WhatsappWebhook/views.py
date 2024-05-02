@@ -6,7 +6,7 @@ import json
 import requests
 
 def sendWhatsAppMessage(phoneNumber, message):
-    headers = {"Authorization": 'Bearer EAAFgGgvXsh4BO6tXRGyTAxduE7kf1182yBv4R7seNkhV6cWwn4Qpv6A5RIIqqiNhACNuQ5VfA5wekeqmcoeU2hpcWTh0HTuowWlBCr1qpxyAi8rpFKXFZBab3p7oc4co8Y0fZBqBq40Tpg2DdUkuBUCGY2NLzzZCDviZChNbgcZA5UlcnNlvaSTZBJGg9a9N6JP7W3Qh4Rb2gPjZCQe1SFCvmeGKd8ZD'}
+    headers = {"Authorization": 'Bearer EAAFgGgvXsh4BO0VaphYZCa6qXWJqBLCBzOgdboLWbgPtyeLAVjcRYPP72pFH4fV00EecwVAp3IoVU67ZA8ZCburk3Uz19tyrswE16DpEuTyZAQcXIMLdYlCwLYKRxcnAUKgKwJ61ZBxll5w6onVZAATZAxvpQVZAdiZBZB77ZA9qPdnWBYVEmncP26TKmoTdg3TKhK7zTIo17bM2Cddfydu5R5t32ol5M8ZD'}
     payload = {"messaging_product":"whatsapp",
                "recipient_type":"individual",
                "to":phoneNumber,
