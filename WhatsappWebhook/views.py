@@ -18,10 +18,10 @@ def sendWhatsAppMessage(phoneNumber, message):
     return ans
 
 def ans(request):
-    if request.method == 'POST':
-        phoneNumber = "+917058921518"
-        message = "I'm Tejas"
-        sendWhatsAppMessage(phoneNumber,message)
+    
+    phoneNumber = "+917058921518"
+    message = "I'm Tejas"
+    sendWhatsAppMessage(phoneNumber,message)
 
 
 
