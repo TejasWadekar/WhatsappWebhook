@@ -36,7 +36,8 @@ def ans(request):
     
 
     if request.method == 'POST':
-        print(request.POST)
+        data = json.loads(request.body)
+        print(data)
 
 
 
