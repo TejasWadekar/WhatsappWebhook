@@ -22,7 +22,17 @@ message = "I'm Tejas"
 sendWhatsAppMessage(phoneNumber,message)
 
 def ans(request):
-    
+    if request.method == 'GET':
+        VERIFY_TOKEN = 'e58b84b9-3017-4d13-be4e-04c05e50a353'
+        mode = request.GET['hub.mode']
+        token = request.GET['hub.verify_token']
+        challenge = request.GET['hub.challenge']
+
+        if mode == 'subscribe' and token == VERIFY_TOKEN:
+            # return HttpResponse(challenge, status = 200)
+            return HttpResponse(request.GET.get('hub.challenge'), status=200)
+        else:
+            return HttpResponse('error', status =403)
     
 
     if request.method == 'POST':
