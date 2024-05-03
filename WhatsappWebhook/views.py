@@ -17,11 +17,13 @@ def sendWhatsAppMessage(phoneNumber, message):
     ans = response.json()
     return ans
 
+phoneNumber = "+917058921518"
+message = "I'm Tejas"
+sendWhatsAppMessage(phoneNumber,message)
+
 def ans(request):
     
-    phoneNumber = "+917058921518"
-    message = "I'm Tejas"
-    sendWhatsAppMessage(phoneNumber,message)
+    
 
     if request.method == 'POST':
         print(request.POST)
