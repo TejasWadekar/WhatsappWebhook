@@ -23,6 +23,9 @@ def ans(request):
     message = "I'm Tejas"
     sendWhatsAppMessage(phoneNumber,message)
 
+    if request.method == 'POST':
+        print(request.POST)
+
 
 
 
